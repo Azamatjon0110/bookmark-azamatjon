@@ -1,0 +1,379 @@
+
+
+:root{
+  --main-text-color :#242A45;
+  --main-bg-color : #fff;
+  --link-color :#5267DF;
+  --link-bg-color:#FA5959;
+}
+
+/* rubik-regular - latin */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v20-latin-regular.woff2") format("woff2"),
+  url("../fonts/rubik-v20-latin-regular.woff") format("woff");
+}
+/* rubik-500 - latin */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+  url("../fonts/rubik-v20-latin-500.woff2") format("woff2"),
+  url("../fonts/rubik-v20-latin-500.woff") format("woff");
+}
+
+/* GENERAL */
+
+html{
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  height: auto;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--main-text-color);
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+
+.container{
+  max-width: 1150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* STICKY-FOOTER */
+.site-main{
+  flex-grow: 1;
+}
+
+/* header start */
+
+.header-info{
+  display: flex;
+  align-items: center;
+}
+
+.site-logo{
+  margin-right: auto;
+}
+
+.nav__list{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  list-style: none;
+}
+
+.nav__item{
+  margin-right: 44px;
+}
+
+.nav__link{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.nav__link:hover{
+  color: var(--link-bg-color);
+  transition: 0.3 ease-in-out;
+}
+
+.nav__link--mr{
+  margin-right: 48px;
+}
+
+.header-info__link{
+  margin: 48px 0;
+  padding: 10px 32px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  background-color: var(--link-bg-color);
+  color: var(--main-bg-color);
+  box-shadow: 0px 8px 8px -4px #495dcf33;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.header-info__link:hover{
+  background-color: var(--main-bg-color);
+  color: var(--link-bg-color);
+  border: 2px solid var(--link-bg-color);
+}
+
+/* header end */
+
+/* hero start */
+
+.hero{
+  background-image: url("../images/hero-bg-img.svg");
+  background-position: calc(50% + 635px) calc(50% + 35px);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero__info{
+  width: 540px;
+  padding: 137px 0;
+}
+
+.hero__title{
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.15px;
+}
+
+.hero__text, .info-top__text{
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--main-text-color);
+  opacity: 0.5;
+}
+
+.hero__linkbox{
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.links__style{
+  padding: 9px 23px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.links__style--chrome{
+  margin-right: 16px;
+  background-color: var(--link-color);
+  color: var(--main-bg-color);
+  border: 2px solid transparent;
+  box-shadow: 0px 8px 8px -4px #495dcf33;
+}
+
+.links__style--chrome:hover{
+  background-color: var(--main-bg-color);
+  color: var(--link-color);
+  border: 2px solid var(--link-color);
+}
+
+.links__style-firefox{
+  background-color: #F7F7F7;
+  color:#242a45bf;
+  border: 2px solid transparent;
+  box-shadow: 0px 8px 8px -4px #495dcf33;
+}
+
+.links__style-firefox:hover{
+  background-color: var(--main-bg-color);
+  border: 2px solid var(--main-text-color);
+}
+
+/* hero end */
+/* download start */
+
+.download-info{
+  padding: 149px 0;
+}
+
+.info-top{
+  width: 540px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+.info-top__title{
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  letter-spacing: -0.1px;
+}
+
+.download-info__list{
+  display: flex;
+  align-items: center;
+  width: 911px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.download-info__item{
+  width: 280px;
+  background: var(--main-bg-color);
+  box-shadow: 0px 10px 20px -5px #495dcf33;
+  border-radius: 15px;
+}
+
+.chrome{
+  position: relative;
+  z-index: 1;
+  /* margin-top: 48px; */
+}
+
+.chrome::before{
+  position: absolute;
+  top: 49px;
+  left: 89px;
+  width: 102px;
+  height: 100px;
+  background-image: url("../images/chrome.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  content: "";
+}
+
+.chrome__box, .firefox__box , .opera__box{
+  padding-top: 181px;
+  text-align: center;
+}
+
+.chrome__box::after, .firefox__box::after, .opera__box::after{
+  display: block;
+  width: 280px;
+  height: 4px;
+  margin-top: 32px;
+  background-image: url("../images/dotted-img.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: "";
+}
+
+.chrome__title, .firefox__title, .opera__title{
+  margin: 0;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
+.chrome__text, .firefox__text, .opera__text{
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #242A45;
+}
+
+.firefox{
+  position: relative;
+  z-index: 1;
+  margin-top: 40px;
+  margin-left: 34px;
+}
+
+.firefox::before{
+  position: absolute;
+  top: 49px;
+  left: 88px;
+  width: 105px;
+  height: 100px;
+  background-image: url("../images/firefox.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  content: "";
+}
+
+.opera{
+  position: relative;
+  z-index: 1;
+  margin-top: 80px;
+  margin-left: 34px;
+}
+
+.opera::before{
+  position: absolute;
+  top: 49px;
+  left: 92px;
+  width: 96px;
+  height: 100px;
+  background-image: url("../images/opera.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  content: "";
+}
+
+.download-info__linkbox{
+  width: 234px;
+  margin: 0 auto;
+  margin-top: 32px;
+  padding-bottom: 24px;
+}
+
+.download-info__link{
+  padding: 9px 34px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  background-color: var(--link-color);
+  color: var(--main-bg-color);
+  box-shadow: 0px 8px 8px -4px #495dcf33;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.download-info__link:hover{
+  background-color: var(--main-bg-color);
+  color: var(--link-color);
+  border: 2px solid var(--link-color);
+}
