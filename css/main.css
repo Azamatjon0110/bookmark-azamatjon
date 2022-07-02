@@ -236,6 +236,10 @@ body{
 
 /* fetures section start */
 
+.features{
+  padding-top: 80px;
+}
+
 .features-links{
   width: 730px;
   margin: 0 auto;
